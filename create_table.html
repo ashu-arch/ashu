@@ -6,9 +6,11 @@
   <h1>3. Find</h1>
 <script>
 var mysql = require('mysql');
+var crdb = require('./create_database');
 var xy = require('./insert_table');
 var dt = require('./delete_table');
 var ft = require('./find_table');
+crdb.create_db();
 const { table } = require('console');
 var con = mysql.createConnection({
   host: "localhost",
